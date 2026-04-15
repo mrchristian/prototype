@@ -40,6 +40,15 @@ The notebook runs a SPARQL query against the Wikidata Query Service, then render
 4. Push changes to `main`.
 5. The workflow at `.github/workflows/publish.yml` builds and deploys the `docs` folder.
 
+## Manual deploy from GitHub UI
+
+The workflow supports manual runs via `workflow_dispatch`.
+
+1. Open the repository on GitHub.
+2. Go to **Actions** -> **Publish Quarto Site**.
+3. Click **Run workflow**.
+4. Select the `main` branch and start the run.
+
 ## Troubleshooting
 
 - If the notebook fetch fails from Wikidata, re-run `quarto render` after a short delay (the service can rate limit).
