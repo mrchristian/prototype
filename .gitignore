@@ -1,4 +1,7 @@
 .quarto/
+_site/
+__pycache__/
+*.pyc
 *.Rproj
 .Rproj.user/
 
