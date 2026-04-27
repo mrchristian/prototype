@@ -17,15 +17,7 @@ The repository includes a Dev Container configuration so you can work entirely i
 
 1. On the repository page on GitHub, click **Code** → **Codespaces** → **Create codespace on main**.
 2. Wait for the container to build — Python packages from `requirements.txt` are installed automatically.
-3. Install Quarto inside the Codespace terminal:
-
-```bash
-curl -fsSL -o /tmp/quarto.deb https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb
-sudo apt-get update
-sudo apt-get install -y /tmp/quarto.deb
-quarto --version
-```
-
+3. Quarto will install itself
 4. Run the Quarto preview server:
 
 ```bash
