@@ -1,0 +1,13 @@
+{
+  "name": "prototype-open-museum",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "bash -lc 'set -euo pipefail; if ! command -v quarto >/dev/null 2>&1; then curl -fsSL -o /tmp/quarto.deb https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb; sudo apt-get update; sudo apt-get install -y /tmp/quarto.deb; rm -f /tmp/quarto.deb; fi; python -m pip install --upgrade pip; pip install -r requirements.txt'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
