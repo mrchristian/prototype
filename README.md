@@ -16,8 +16,14 @@ This project is configured as a Quarto website and ready for deployment to GitHu
 The repository includes a Dev Container configuration so you can work entirely in the browser without installing anything locally.
 
 1. On the repository page on GitHub, click **Code** → **Codespaces** → **Create codespace on main**.
-2. Wait for the container to build — Quarto and Python packages from `requirements.txt` are installed automatically.
+2. Wait for the container to build — Quarto is preinstalled in the container image and Python packages from `requirements.txt` are installed automatically.
 3. Once the Codespace is ready, open the integrated terminal and run the Quarto preview server:
+
+```bash
+quarto --version
+```
+
+Then run:
 
 ```bash
 quarto preview
@@ -25,6 +31,8 @@ quarto preview
 
 4. VS Code will prompt you to open the forwarded port in a browser — click **Open in Browser** to see the live site.
 5. To profile a different Wikidata item, open `wikidata-item.ipynb`, update `item_id` in Cell 3, then run all cells or re-run `quarto render`.
+
+If you already had an older Codespace for this repository, run **Dev Containers: Rebuild Container** from the command palette to pick up the updated Quarto-enabled image.
 
 ## Local development
 
