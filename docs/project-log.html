@@ -159,27 +159,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Track important milestones and implementation notes here.</p>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section">2026-04-16</h2>
-<ul>
-<li>Changed profiled Wikidata item from <code>Q138547468</code> to <code>Q138572994</code> in <code>wikidata-item.ipynb</code>.</li>
-<li>Re-rendered site with updated item profile.</li>
-</ul>
 </section>
 <section id="section-1" class="level2">
 <h2 class="anchored" data-anchor-id="section-1">2026-04-15</h2>
-<ul>
-<li>Initialized Quarto website source files.</li>
-<li>Added GitHub Pages deployment workflow.</li>
-<li>Set Quarto output directory to <code>docs</code> for GitHub Pages publishing.</li>
-<li>Added notebook-backed item profile page for Wikidata item <code>Q138547468</code>.</li>
-<li>Created reusable helper module <code>wikidata_profile.py</code> for query, fetch, and rendering logic.</li>
-<li>Added visual summaries to the item profile page (top properties and value type breakdown).</li>
-<li>Fixed Wikidata endpoint access by sending explicit HTTP headers in SPARQL requests.</li>
-<li>Parameterized notebook workflow so <code>item_id</code> can be changed in one place.</li>
-<li>Enabled collapsible code blocks in rendered notebook HTML.</li>
-<li>Initialized git repository, pushed to <code>mrchristian/prototype</code>, and connected <code>origin</code>.</li>
-<li>Fixed GitHub Actions Pages setup failure by enabling automatic Pages enablement in workflow.</li>
-<li>Added manual <code>workflow_dispatch</code> deployment instructions in project documentation.</li>
-</ul>
+<p>The graph is generated using the <code>networkx</code> and <code>matplotlib</code> Python libraries. The code extracts subject-property-object triples from the SPARQL query results (<code>bindings</code>), builds a directed graph, and renders it as a static image. The new code cell appears after the HTML profile and is compatible with Quarto HTML/PDF output. To update the graph for a different item, change the <code>item_id</code> at the top of the notebook and re-run all cells. If <code>networkx</code> or <code>matplotlib</code> are not installed, add them to <code>requirements.txt</code> and re-run the environment setup. - Initialized Quarto website source files. - Added GitHub Pages deployment workflow. - Set Quarto output directory to <code>docs</code> for GitHub Pages publishing. - Added notebook-backed item profile page for Wikidata item <code>Q138547468</code>. - Created reusable helper module <code>wikidata_profile.py</code> for query, fetch, and rendering logic. - Added visual summaries to the item profile page (top properties and value type breakdown). - Fixed Wikidata endpoint access by sending explicit HTTP headers in SPARQL requests. - Parameterized notebook workflow so <code>item_id</code> can be changed in one place. - Enabled collapsible code blocks in rendered notebook HTML. - Initialized git repository, pushed to <code>mrchristian/prototype</code>, and connected <code>origin</code>. - Fixed GitHub Actions Pages setup failure by enabling automatic Pages enablement in workflow. - Added manual <code>workflow_dispatch</code> deployment instructions in project documentation.</p>
 </section>
 <section id="publishing-instructions" class="level2">
 <h2 class="anchored" data-anchor-id="publishing-instructions">Publishing Instructions</h2>
